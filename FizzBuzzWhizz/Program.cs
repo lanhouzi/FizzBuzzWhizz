@@ -3,14 +3,14 @@ using System.Linq;
 
 namespace FizzBuzzWhizz
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Output(Console.ReadLine());
             Console.ReadLine();
         }
-        static void Output(string recive)
+        public static void Output(string recive)
         {
             int[] Input = recive.Split(',').Select(i => Convert.ToInt32(i)).ToArray();
             for (int i = 0; i <= 100; i++)

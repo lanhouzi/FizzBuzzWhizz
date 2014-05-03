@@ -1,7 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
+﻿using FizzBuzzWhizz;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject
@@ -10,9 +7,9 @@ namespace UnitTestProject
     /// UnitTest 的摘要说明
     /// </summary>
     [TestClass]
-    public class UnitTest
+    public class ProgramUnitTest
     {
-        public UnitTest()
+        public ProgramUnitTest()
         {
             //
             //TODO:  在此处添加构造函数逻辑
@@ -60,11 +57,11 @@ namespace UnitTestProject
         #endregion
 
         [TestMethod]
-        public void TestMethod1()
+        //[ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void Output_Test()
         {
-            //
-            // TODO:  在此处添加测试逻辑
-            //
+            string recive = "3,5,7";
+            Program.Output(recive);
         }
     }
 }
